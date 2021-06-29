@@ -122,7 +122,7 @@ Server’s Program flow
     like: “Hello random thread, there is a job for you. Go ahead and
     execute it please.”
 
-    -           robust_pthread_mutex_lock(&mutex);
+    -               robust_pthread_mutex_lock(&mutex);
                     enqueue_client(&clients, client_fd);
                     pthread_cond_signal(&request_condition_variable);
                     robust_pthread_mutex_unlock(&mutex);
@@ -135,7 +135,7 @@ Server’s Program flow
     dequeue the job and execute. If there are no remaning jobs they will
     sleep.
 
-    -   /*  DEQUEUE THE JOB*/
+    -               /*  DEQUEUE THE JOB*/
                     robust_pthread_mutex_lock(&mutex);
                     while(empty(clients))
                     {
