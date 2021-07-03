@@ -1,3 +1,12 @@
+## Usage:
+Server will spawn as a daemon process. 
+
+Run it as: `./server -p <port_no> -o <server_log_file> -l <number_of_threads> -d <csv_file>`
+
+Run the clients as: `./client -i <client_no> -a <ip_address> -p <port_no> -o <query_list>`
+
+After running the server program, alternatively you can run the [test.sh](https://github.com/patoglu/vehicle_counter/blob/main/Report.pdf) to do more realistic test with many clients.
+
 Problem Definition
 ==================
 
