@@ -272,8 +272,10 @@ Server’s Program flow
     send queries. Then each client will receive the results of their
     queries.
 
-Little Book of Semaphores Advanced Programming in the Unix Environment
 
-Advanced Linux Programming
+## References
+*Little Book of Semaphores Advanced Programming in the Unix Environment
 
-https://linux.die.net/man/
+*Advanced Linux Programming
+
+*https://linux.die.net/man/
