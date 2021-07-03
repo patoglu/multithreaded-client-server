@@ -6,7 +6,7 @@ Note that the server will spawn as a daemon process so you can only see the logs
 
 Run the clients as: `./client -i <client_no> -a <ip_address> -p <port_no> -o <query_list>`
 
-After running the server program on port number `1500`  alternatively you can run the [test.sh](https://github.com/patoglu/multithreaded-client-server/blob/main/test/test.sh) to do more realistic test with many clients.
+After running the server program on port number `1500` with the initial [database.csv](https://github.com/patoglu/multithreaded-client-server/blob/main/test/database.csv) file, alternatively you can run the [test.sh](https://github.com/patoglu/multithreaded-client-server/blob/main/test/test.sh) to do more realistic test with many clients.
 
 Problem Definition
 ==================
