@@ -274,7 +274,9 @@ Server’s Program flow
 
 
 ## References
-*Little Book of Semaphores Advanced Programming in the Unix Environment
+*Little Book of Semaphores
+
+*Advanced Programming in the Unix Environment
 
 *Advanced Linux Programming
 
