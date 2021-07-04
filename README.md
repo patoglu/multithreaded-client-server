@@ -268,7 +268,7 @@ Server’s Program flow
     server’s side. Therefore a SIGINT handler is created. This is not a
     perfect solution but it shows the awareness of a problem.
 
--   ***Client connects and send queries:***Client connects to server and
+-   ***Client connects and send queries:*** Client connects to server and
     send queries. Then each client will receive the results of their
     queries.
 
