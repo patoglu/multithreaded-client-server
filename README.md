@@ -40,7 +40,7 @@ Server’s Program flow
     preventing mechanism with file locks. But since it’s forbidden in
     the project, I didn’t use it. It’s still available in the code.
 
-    -       struct sockaddr_un sun;
+    -           struct sockaddr_un sun;
                 //https://unix.stackexchange.com/a/219687
                 s = socket(AF_UNIX, SOCK_STREAM, 0);
                 if (s < 0) {
@@ -61,7 +61,7 @@ Server’s Program flow
     the file descriptors we can’t do i/o from anywhere. Therefore we
     open a log file to print the logs.
 
-    -       for (fd = 0; fd < maxfd; fd++)
+    -           for (fd = 0; fd < maxfd; fd++)
                 {
                     if(fd != abstract_fd)
                     {
@@ -75,7 +75,7 @@ Server’s Program flow
     explicitly and also wait for working threads, then exits gracefully.
     I’ll be talking about this on *main thread: synchronizer* section.
 
-    -       struct sigaction sa;
+    -           struct sigaction sa;
                 sigemptyset(&sa.sa_mask);
                 sa.sa_flags = 0;
                 sa.sa_handler = handler;
@@ -105,7 +105,7 @@ Server’s Program flow
     that those threads should wait until the main thread arrives.
     Therefore I used a barrier to accomplish this.
 
-    -   robust_pthread_mutex_lock(&mutex);
+    -           robust_pthread_mutex_lock(&mutex);
                 arrived++;
                 if(arrived < pool_size)
                 {
@@ -187,7 +187,7 @@ Server’s Program flow
     descriptors, parse the query, modify-read the database and send back
     to specified client like this:
 
-    -       while((read = robust_read(client_fd, pack, PACKLEN)) > 0)
+    -               while((read = robust_read(client_fd, pack, PACKLEN)) > 0)
                     {
 
                         //TODO: FIX THIS. NUMBER IS NOT NEEDED.
