@@ -25,7 +25,7 @@ Server’s Program flow
     not valid then it returns an error message and terminates the
     program.
 
-    -   void
+    -       void
             parse_args(int argc, char**argv, int *port_no, char *path_to_log_file, int *pool_size , char *dataset_path)
                 
 
